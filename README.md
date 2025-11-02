@@ -23,5 +23,5 @@ A responsive website dynamically adapts its layout to optimize the viewing exper
 
 Check out
 
-- [this vide](https://drive.google.com/file/d/1WT0Qv4E0aUvU_h1GE_T-V0LaGWTWueCg/view?usp=drive_link),where I describe my
+- [this vide](https://drive.google.com/file/d/1BkGSZJHGlYRaORH-UXwsQlzKWMKLQ-Hj/view?usp=drive_link),where I describe my
   project and some challenges I faced while building it.
