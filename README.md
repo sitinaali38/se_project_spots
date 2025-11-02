@@ -17,7 +17,6 @@ A responsive website dynamically adapts its layout to optimize the viewing exper
 **Images**
 
 ![alt text](/images/screenshot.png)
-![alt text](</images/screenshot(2).png>)
 
 ## Project Pitch Video
 
