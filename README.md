@@ -1,21 +1,27 @@
 # Project 3: Spots
 
-### Overview  
+### Overview
 
-* Intro  
-* Figma  
-* Images  
-  
+- Intro
+- Figma
+- Images
+
 **Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+
+A responsive website dynamically adapts its layout to optimize the viewing experience across diverse devices, including desktops and smartphones. It employs flexible grids, media queries, and fluid images to dynamically scale, resize, or conceal content based on the device’s screen size, ensuring optimal usability and consistent design regardless of the display. This approach eliminates the necessity of separate websites for different devices and is paramount for enhancing user experience, optimizing search engine rankings, and expanding the reach of the website to a broader audience.
+
+**Figma**
+
+- [project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+
+**Images**
+
+![alt text](/images/screenshot.png)
+![alt text](</images/screenshot(2).png>)
+
+## Project Pitch Video
+
+Check out
+
+- [this vide](https://drive.google.com/file/d/1WT0Qv4E0aUvU_h1GE_T-V0LaGWTWueCg/view?usp=drive_link),where I describe my
+  project and some challenges I faced while building it.

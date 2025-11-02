@@ -1,4 +1,15 @@
+html {
+  scrollbar-width: none;
+}
+
 .page {
+  max-width: 1440px;
   background-color: #fcf5e5;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+.page__section {
+  max-width: 1280px;
+  margin: 0 auto;
 }

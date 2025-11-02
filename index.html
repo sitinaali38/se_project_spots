@@ -20,13 +20,118 @@
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/Logo.svg" alt="Spots Logo" class="logo" />
+        <img src="./images/Logo.svg" alt="Spots Logo" class="header__logo" />
       </header>
       <main class="content">
-        <section class="profile"></section>
-        <section class="card"></section>
+        <section class="profile page__section">
+          <img
+            src="./images/avatar.jpg"
+            alt="Profile Avatar"
+            class="profile__avatar"
+          />
+          <div class="profile__column">
+            <h1 class="profile__name">
+              Bessie Coleman Handling this is a bit trickier than dealing with
+              overflow for a single row of text. Here are the necessary styles
+              to cap the number of rows at three and to truncate text with an
+              ellipsis if there is overflow
+            </h1>
+            <p class="profile__description">
+              Civil Aviator When editing profile data from the popup, the user
+              might enter text that is too long. When editing profile data from
+              the popup, the user might enter text that is too long.
+            </p>
+
+            <button class="profile__edit-button" type="button">
+              <img
+                src="./images/pencil.svg"
+                alt="edit symbol"
+                class="profile__edit-icon"
+              />Edit Profile
+            </button>
+          </div>
+          <button class="profile__add-button" type="button">
+            <img
+              src="./images/plus.svg"
+              alt="add symbol"
+              class="profile__add-icon"
+            />New Post
+          </button>
+        </section>
+        <section class="cards">
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Val Thorens</h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/2-photo-by-ceiline-from-pexels.jpg"
+                alt="Restaurant terrace"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Restaurant terrace</h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt="An outdoor cafe"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">An outdoor cafe</h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt="A very long bridge, over the forest..."
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">
+                  A very long bridge, over the forest...
+                </h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt="Tunnel with morning light"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Tunnel with morning light</h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="Mountain house"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Mountain house</h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">2025 © sitina</footer>
     </div>
   </body>
 </html>

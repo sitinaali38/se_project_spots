@@ -1,0 +1,15 @@
+.header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 94px;
+  height: 26px;
+}
