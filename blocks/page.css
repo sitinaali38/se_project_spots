@@ -3,7 +3,7 @@ html {
 }
 
 .page {
-  max-width: 1440px;
+  width: 100%;
   background-color: #fcf5e5;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   min-height: 100vh;
@@ -12,4 +12,11 @@ html {
 .page__section {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 630px) {
+  .page__section {
+    padding: 0 16px;
+  }
 }

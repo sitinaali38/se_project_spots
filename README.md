@@ -24,3 +24,7 @@ Check out
 
 - [this vide](https://drive.google.com/file/d/1BkGSZJHGlYRaORH-UXwsQlzKWMKLQ-Hj/view?usp=drive_link),where I describe my
   project and some challenges I faced while building it.
+
+## link to the deployed project on GitHub Pages.
+
+- [url](https://sitinaali38.github.io/se_project_spots/)

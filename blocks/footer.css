@@ -7,3 +7,12 @@
   margin: 0 auto;
   color: rgba(33, 33, 33, 0.7);
 }
+
+. .footer__copyright {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  color: rgba(33, 33, 33, 0.7);
+}

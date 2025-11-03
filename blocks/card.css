@@ -7,6 +7,8 @@
   object-fit: cover;
   display: block;
   height: 413px;
+  margin-bottom: 12px;
+  border-radius: 8px;
 }
 
 .card__content {
@@ -23,7 +25,11 @@
   font-size: 20px;
   line-height: 1.2;
   color: #212121;
-  width: 353px;
+  margin: 0git;
+  max-width: calc(100% - 353px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card__like-button {
@@ -48,7 +54,7 @@
 
   .card__image {
     width: 288px;
-    height: 318px;
+    height: 288px;
   }
 
   .card__title {
