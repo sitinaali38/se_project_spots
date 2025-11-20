@@ -67,4 +67,4 @@ function handleAddCardFormSubmit(evt) {
   // Logic for adding a new card goes here
   closeModal(newPostModal);
 }
-addCardFormEl.addEventListener("submit", handleAddCardFormSubmit);
+addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
