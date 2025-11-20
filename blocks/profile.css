@@ -122,7 +122,6 @@
     line-height: 1;
     margin: 0 0 6px;
     color: #212121;
-    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;

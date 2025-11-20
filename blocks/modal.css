@@ -109,7 +109,7 @@ modal__submit-button:hover {
   transform: translate(-1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-*/ @media screen and (max-width: 630px) {
+@media screen and (max-width: 630px) {
   .modal__container {
     width: 300px;
     /* top: 134px;
