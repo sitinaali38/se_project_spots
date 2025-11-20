@@ -19,8 +19,10 @@ const addCardFormElement = newPostModal.querySelector(".modal__form");
 const nameInput = newPostModal.querySelector("#Post-caption-input");
 const linkInput = newPostModal.querySelector("#image-link-input");
 
-const profileNameEl = document.querySelector(".profile__name");
-const profileDescriptionEl = document.querySelector(".profile__description");
+const profileNameElement = document.querySelector(".profile__name");
+const profileDescriptionElement = document.querySelector(
+  ".profile__description"
+);
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
 }
@@ -29,8 +31,8 @@ function closeModal(modal) {
 }
 // Open modal when clicking the edit profile button
 editProfileButton.addEventListener("click", function () {
-  editProfileNameInput.value = profileNameEl.textContent;
-  editProfileDescriptionInput.value = profileDescriptionEl.textContent;
+  editProfileNameInput.value = profileNameElement.textContent;
+  editProfileDescriptionInput.value = profileDescriptionElement.textContent;
   openModal(editProfileModal);
 });
 
@@ -50,8 +52,8 @@ newPostCloseButton.addEventListener("click", function () {
 // Handle form submission for editing profile
 function handleEditProfileFormSubmit(evt) {
   evt.preventDefault();
-  profileNameEl.textContent = editProfileNameInput.value;
-  profileDescriptionEl.textContent = editProfileDescriptionInput.value;
+  profileNameElement.textContent = editProfileNameInput.value;
+  profileDescriptionElement.textContent = editProfileDescriptionInput.value;
   closeModal(editProfileModal);
 }
 editProfileForm.addEventListener("submit", handleEditProfileFormSubmit);
@@ -60,7 +62,7 @@ editProfileForm.addEventListener("submit", handleEditProfileFormSubmit);
 function handleAddCardFormSubmit(evt) {
   evt.preventDefault();
   console.log("New card added");
-  console.log(newInput.value);
+  console.log(nameInput.value);
   console.log(linkInput.value);
   // Logic for adding a new card goes here
   closeModal(newPostModal);
