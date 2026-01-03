@@ -11,7 +11,7 @@
   width: 32px;
   height: 32px;
   top: 10px;
-  left: 371px;
+  right: 10px;
   border: 0;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.2);
@@ -30,6 +30,15 @@
   height: 413px;
   margin-bottom: 12px;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.card__image:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card__image:focus {
+  transform: scale(1.05);
 }
 
 .card__content {
@@ -49,6 +58,7 @@
   margin: 0;
   max-width: 353px;
   width: 100%;
+  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -85,8 +95,6 @@
   }
 
   .card__delete-button {
-    top: 10px;
-    left: 246px;
     border: 0;
   }
 

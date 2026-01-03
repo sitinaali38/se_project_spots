@@ -26,8 +26,6 @@
   position: relative;
   background-color: #fff;
   border-radius: 8px;
-  /* margin: 81px 224px 80px 224.5px;
-  padding: 32px 50px; */
   max-width: 70vw;
   background: none;
   box-sizing: border-box;
@@ -132,9 +130,13 @@
 .modal__close_type_preview {
   top: 0;
   right: -50px;
-  left: auto;
   padding: 0 16px;
+  cursor: pointer;
   background-image: url(../images/white-Close-Icon.svg);
+}
+
+.modal__close_type_preview:hover {
+  opacity: 0.4;
 }
 
 .modal__submit-button:hover {
