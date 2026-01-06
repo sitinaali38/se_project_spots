@@ -26,12 +26,21 @@
   position: relative;
   background-color: #fff;
   border-radius: 8px;
-  max-width: 70vw;
-  background: none;
+  max-width: 730px;
+  width: 100%;
+  padding: 32px 50px;
   box-sizing: border-box;
 }
 
-.modal__close {
+.modal__container_type_preview {
+  position: relative;
+  background: none;
+  padding: 0;
+  margin: 0;
+  max-width: 70vw;
+}
+
+.modal__close-button {
   background: none;
   border: none;
   background-image: url(../images/Close.svg);
@@ -42,11 +51,12 @@
   color: #fff;
   cursor: pointer;
   position: absolute;
+  right: 48px;
   width: 40px;
   height: 40px;
 }
 
-.modal__close:hover {
+.modal__close-button:hover {
   background-image: url(../images/darkclose.svg);
 }
 
@@ -123,13 +133,17 @@
   color: #fff;
   text-overflow: ellipsis;
   border: none;
-
   background-color: #212121;
 }
 
 .modal__close_type_preview {
+  position: absolute;
+  background: none;
+  border: none;
   top: 0;
   right: -50px;
+  width: 40px;
+  height: 40px;
   padding: 0 16px;
   cursor: pointer;
   background-image: url(../images/white-Close-Icon.svg);
@@ -153,8 +167,8 @@
     padding: 12px;
   }
 
-  .modal__close {
-    top: -8px;
+  .modal__close-button {
+    top: 3px;
     right: 12px;
   }
 

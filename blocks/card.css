@@ -74,13 +74,13 @@
   cursor: pointer;
 }
 
-.card__like-button_active {
-  background-image: url(../images/likehearticon.svg);
-  color: #ff6565;
+.card__like-button:hover {
   opacity: 1;
 }
 
-.card__like-button:hover {
+.card__like-button_active {
+  background-image: url(../images/likehearticon.svg);
+  color: #ff6565;
   opacity: 1;
 }
 

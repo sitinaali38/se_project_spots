@@ -46,6 +46,7 @@ const editProfileDescriptionInput = editProfileModal.querySelector(
 const newPostButton = document.querySelector(".profile__add-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
+const addCardFormElement = newPostModal.querySelector(".modal__form");
 const nameInput = newPostModal.querySelector("#Post-caption-input");
 const linkInput = newPostModal.querySelector("#image-link-input");
 const cardTemplate = document.querySelector("#card-template");
@@ -88,6 +89,7 @@ function getCardElement(data) {
 
   return cardElement;
 }
+
 const cardsList = document.querySelector(".cards__list");
 
 const profileNameElement = document.querySelector(".profile__name");
@@ -134,13 +136,13 @@ function handleEditProfileFormSubmit(evt) {
 editProfileForm.addEventListener("submit", handleEditProfileFormSubmit);
 
 // Handle form submission for adding a new card
+
 function handleAddCardFormSubmit(evt) {
   evt.preventDefault();
   const inputValues = {
     name: nameInput.value,
     link: linkInput.value,
   };
-  addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
 
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
@@ -148,6 +150,7 @@ function handleAddCardFormSubmit(evt) {
   closeModal(newPostModal);
   evt.target.reset();
 }
+addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
 
 initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
