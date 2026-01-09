@@ -83,6 +83,7 @@
   border-radius: 8px;
   padding: 18px 32px;
   gap: 8px;
+  border: none;
   color: #fcf5e5;
   cursor: pointer;
   background-color: #212121;

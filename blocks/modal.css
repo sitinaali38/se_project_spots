@@ -37,7 +37,6 @@
   background: none;
   padding: 0;
   margin: 0;
-  max-width: 70vw;
 }
 
 .modal__close-button {
@@ -193,8 +192,12 @@
   }
 
   .modal__image {
-    max-width: unset;
-    border-radius: 4px;
+    max-width: none;
+    max-height: none;
+  }
+
+  .modal__container_type_preview {
+    width: 90%;
   }
 
   .modal__close_type_preview {
