@@ -18,12 +18,15 @@ A responsive website dynamically adapts its layout to optimize the viewing exper
 
 <img src="https://i.imgur.com/t32SlfO.jpeg" alt="screenshot of project">
 
-## Project Pitch Video
+## Project Pitch Videos
 
-Check out
+Check out these videos, where I describe my project
+and some challenges I faced while building it:
 
-- [this vide](https://drive.google.com/file/d/1BkGSZJHGlYRaORH-UXwsQlzKWMKLQ-Hj/view?usp=drive_link),where I describe my
-  project and some challenges I faced while building it.
+- [SpotsStage3](<(https://drive.google.com/file/d/1BkGSZJHGlYRaORH-UXwsQlzKWMKLQ-Hj/view?usp=drive_link)>)
+- [SpotsStage9](<(https://drive.google.com/file/d/1YtfvsUxOEy81u-YbXmaPxpxqQXQONl_T/view?usp=drive_link)>)
+
+- [this vide],where I describe my
 
 ## link to the deployed project on GitHub Pages.
 

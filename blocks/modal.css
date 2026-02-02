@@ -57,6 +57,8 @@
 
 .modal__close-button:hover {
   background-image: url(../images/darkclose.svg);
+  color: #212121;
+  border: 2px;
 }
 
 .modal__title {
@@ -92,16 +94,25 @@
   box-sizing: border-box;
 }
 
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
+.modal__input:hover {
+  border-color: #212121;
+}
+
 .modal__input::placeholder {
   font-weight: 500;
   font-size: 20px;
   line-height: 100%;
   color: rgba(33, 33, 33, 0.3);
 }
+
 .modal__submit-button {
   padding: 18px 32px;
   width: 156px;
-  background-color: #000;
+  background-color: #212121;
   color: #fcf5e5;
   border: none;
   font-weight: 500;
@@ -109,6 +120,16 @@
   line-height: 100%;
   cursor: pointer;
   border-radius: 8px;
+}
+
+.modal__submit-button_disabled {
+  background-color: #212121;
+  opacity: 0.5;
+}
+
+.modal__submit-button:hover {
+  background-color: #212121;
+  opacity: 0.8;
 }
 
 .modal__image {
@@ -135,6 +156,20 @@
   background-color: #212121;
 }
 
+.modal__error {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 8px;
+  line-height: 1.1;
+  color: rgba(255, 0, 0, 0.7);
+  display: block;
+}
+
+/* .modal__error-message_visible {
+  display: block;
+} */
+
 .modal__close_type_preview {
   position: absolute;
   background: none;
@@ -150,6 +185,10 @@
 
 .modal__close_type_preview:hover {
   opacity: 0.4;
+}
+
+.modal__submit-button-disabled {
+  background-color: rgba(33, 33, 33, 0.5);
 }
 
 .modal__submit-button:hover {

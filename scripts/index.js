@@ -35,7 +35,7 @@ const editProfileCloseButton = editProfileModal.querySelector(
   ".modal__close-button"
 );
 const editProfileForm = document.forms["edit-profile-form"];
-
+const modals = document.querySelectorAll(".modal");
 const editProfileNameInput = editProfileModal.querySelector(
   "#profile-name-input"
 );
@@ -47,6 +47,7 @@ const newPostButton = document.querySelector(".profile__add-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
 const addCardFormElement = newPostModal.querySelector(".modal__form");
+const buttonElement = addCardFormElement.querySelector(".modal__submit-button");
 const nameInput = newPostModal.querySelector("#Post-caption-input");
 const linkInput = newPostModal.querySelector("#image-link-input");
 const cardTemplate = document.querySelector("#card-template");
@@ -98,14 +99,21 @@ const profileDescriptionElement = document.querySelector(
 );
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", handleEscapeKey);
 }
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", handleEscapeKey);
 }
+
 // Open modal when clicking the edit profile button
 editProfileButton.addEventListener("click", function () {
   editProfileNameInput.value = profileNameElement.textContent;
   editProfileDescriptionInput.value = profileDescriptionElement.textContent;
+  resetValidation(editProfileForm, [
+    editProfileNameInput,
+    editProfileDescriptionInput,
+  ]);
   openModal(editProfileModal);
 });
 
@@ -156,3 +164,20 @@ initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", (evt) => {
+    if (evt.target.classList.contains("modal")) {
+      closeModal(modal);
+    }
+  });
+});
+
+function handleEscapeKey(evt) {
+  if (evt.key === "Escape") {
+    const openModal = document.querySelector(".modal_opened");
+    if (openModal) {
+      closeModal(openModal);
+    }
+  }
+}
