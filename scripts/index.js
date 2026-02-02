@@ -110,10 +110,11 @@ function closeModal(modal) {
 editProfileButton.addEventListener("click", function () {
   editProfileNameInput.value = profileNameElement.textContent;
   editProfileDescriptionInput.value = profileDescriptionElement.textContent;
-  resetValidation(editProfileForm, [
-    editProfileNameInput,
-    editProfileDescriptionInput,
-  ]);
+  resetValidation(
+    editProfileForm,
+    [editProfileNameInput, editProfileDescriptionInput],
+    settings
+  );
   openModal(editProfileModal);
 });
 
@@ -175,7 +176,7 @@ modals.forEach((modal) => {
 
 function handleEscapeKey(evt) {
   if (evt.key === "Escape") {
-    const openModal = document.querySelector(".modal_opened");
+    const openModal = document.querySelector(".modal_is-opened");
     if (openModal) {
       closeModal(openModal);
     }
